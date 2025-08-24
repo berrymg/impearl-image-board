@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  background: #1E1E1E !important;
+  color: #880d1e;
+  font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0.2px;
+
+}
+
+a {
+  color: #880d1e;
+}
+
+.subtitle {
+  font-size: 10px;
+}
+
+.topBar {
+  text-align: center;
+  color: #880d1e !important;
+  display: table !important;
+  width: 100%;
+  left: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+}
+
+.boardList {
+  word-spacing: -3px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.myHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.myHeader img {
+  height: 48px;
+  flex: 0 0 auto;
+}
+
+.myHeader img.left-dragon {
+  transform: scaleX(-1);
+}
+
+.myHeader h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+.page-container {}
+
+
+.postbox {
+  width: 520px;
+  margin: 0px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  width: 100%;
+  border: 1px solid #880d1e;
+  background: #333;
+}
+
+.cell {
+  border: 1px solid #880d1e;
+  align-items: center;
+  background: #333;
+}
+
+.bmd-form-group {
+  position: relative;
+  padding-top: 0px !important;
+}
+
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  color: #AAA;
+}
+
+
+.modalInput {
+ background-color: #333;
+ color: #880d1e !important;
+ border: 1px solid #880d1e; 
+ padding: 6px 8px;
+}
+
+/* subject row */
+.subject {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 0;
+  /* optional: remove extra vertical padding */
+
+}
+
+.subject input[type="text"] {
+  flex: 1 1 auto;
+}
+
+/* inputs / textarea / file */
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #880d1e;
+  background: #333;
+  color: #AAA;
+  caret-color: #880d1e;
+  outline: none;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* style the native file button */
+input[type="file"]::file-selector-button,
+input[type="file"]::-webkit-file-upload-button {
+  border: 1px solid #880d1e;
+  background: transparent;
+  color: #AAA;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+
+.thread {
+  border: 1px solid #333;
+  display: flow-root;
+  padding: 4px;
+}
+
+.thread .comment {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.post-bar {
+  display: flex;
+  /* lay items in one row */
+  align-items: center;
+  /* vertical centering */
+  gap: 8px;
+  flex-wrap: nowrap;
+  /* never wrap to a 2nd line */
+  white-space: nowrap;
+  /* keep inline text on one line */
+  height: 28px;
+  /* one-line box */
+  line-height: 28px;
+  /* matches the height */
+}
+
+.postSubject {
+  font-weight: 800;
+  text-decoration: double;
+}
+
+.comment {
+  color: #AAA;
+}
+
+.reply {
+  display: inline-block;
+  vertical-align: top;
+  background: #333;
+  padding: 8px 10px;
+  margin: 8px 0 8px 16px;
+  max-width: 900px;
+}
+
+.op img {
+  float: left;
+  display: block;
+  /* remove inline baseline gap */
+  max-width: 200px;
+  height: auto;
+  margin: 8px 12px 8px 8px;
+  /* top right bottom left */
+  padding: 0;
+  /* don't use padding on the img */
+}
+
+.reply img {
+  float: left;
+  display: block;
+  /* remove inline baseline gap */
+  max-width: 100px;
+  height: auto;
+  margin: 8px 12px 8px 8px;
+  /* top right bottom left */
+  padding: 0;
+  /* don't use padding on the img */
+
+}
+
+.author-span {
+  color: #80B8EF;
+  font-weight: 800;
+}
+
+.modal .modal-content {
+  background-image: url("../imgs/drip.gif");
+  /* styles/ → ../imgs/ */
+  background-size: cover;
+  /* fill nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  color:#AAA;
+  /* override default */
+}
+
+.btn-primary {
+  color: #880d1e !important;
+}
+
+.editSpan, .deleteSpan {
+  display: none;
+}
+
+.sparkle-text {
+  position: relative;
+  font-weight: 700;
+
+  /* Make a glittery background and clip it to the glyphs */
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, .9) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 40%, rgba(255, 255, 255, .7) 0 1.5px, transparent 3px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, .8) 0 2px, transparent 3px),
+    linear-gradient(90deg, #80B8EF, #A4CCF4 50%, #80B8EF);
+  background-size: 120px 120px, 180px 180px, 160px 160px, 100% 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* Safari */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  /* Safari */
+
+  animation: sparkleMove 4s linear infinite;
+}
+
+
+@keyframes sparkleMove {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+
+  50% {
+    background-position: 30px -25px, -40px 20px, 20px 35px, 0 0;
+  }
+
+  100% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+}

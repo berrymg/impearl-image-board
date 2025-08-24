@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Impearl</title>
+</head>
+
+<body>
+  <div class="topBar">
+
+    <div class="boardList">
+
+      <span>
+        [
+        <a href="/">home</a>
+        ]
+      </span>
+
+      <span>
+        [
+        <a href="releases.html">RELEASES!!!</a>
+        ]
+      </span>
+
+      <span class="sub">
+        [
+        <a href="jam.html">jam</a>
+        /
+        <a href="rec.html">rec</a>
+        /
+        <a href="disc.html">disc</a>
+        ]
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="page-container">
+    <header class="myHeader">
+      <img class="left-dragon" src="imgs/dragon.gif">
+      <h1>impearl</h1>
+      <img src="imgs/dragon.gif">
+    </header>
+
+    <div class="myHeader" style="padding-bottom: 4px;">
+      <span data-toggle="modal" data-target="#exampleModal">login</span>
+    </div>
+
+
+    <div class="card-container">
+      <img src="imgs/swordleft.gif">
+      <div class="my-card">
+        view releases
+        <div class="subtitle">find our original music!</div>
+        <a href="/releases.html">
+          <img src="imgs/alienjar.gif">
+        </a>
+      </div>
+      <img src="imgs/swordright.gif">
+    </div>
+
+
+    <!-- BIG ASS GROUP PHOTO GOES HERE! -->
+    <div style="text-align: center; padding-top: 8px;">
+      <img src="imgs/groupphoto.png">
+    </div>
+
+    <!-- stats -->
+    <div style="text-align: center;">
+      /ᐠ - ˕ -マ ᶻ 𝗓 𐰁
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="authEmail">Email</label>
+            <input id="authEmail">
+            <br>
+            <label for="authPassword">password</label>
+            <input type="password"id="authPassword">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">nevermind</button>
+            <button type="button" class="btn btn-primary">login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>
+    $("body").bootstrapMaterialDesign();
+  </script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script>imibAuth.wireIndexLoginModal();</script>
+</body>
+
+</html>

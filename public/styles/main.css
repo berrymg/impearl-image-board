@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: #0b000f;
+    color: #880d1e;
+    font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    letter-spacing: 0.2px;
+
+}
+
+a {
+    color: #880d1e;
+}
+
+.subtitle {
+    font-size: 10px;
+}
+
+.topBar {
+    text-align: center;
+    color: #880d1e !important;
+    display: table !important;
+    width: 100%;
+    left: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+}
+
+.boardList {
+    word-spacing: -3px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.myHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.myHeader img {
+    height: 48px;
+    flex: 0 0 auto;
+}
+
+.myHeader img.left-dragon {
+    transform: scaleX(-1);
+    /* mirror horizontally */
+}
+
+.myHeader h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title-block h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.page-container {}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.my-card {
+
+    flex: 1 1 200px;
+    max-width: 250px;
+    border: 1px solid #880d1e;
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+
+}
+
+.my-card img {
+    margin: 4px;
+}
+
+
+.modal .modal-content {
+    background-image: url("../imgs/drip.gif");
+    /* styles/ → ../imgs/ */
+    background-size: cover;
+    /* fill nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  
+    color:#AAA;
+  }
+
+input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #880d1e;
+  background: #333;
+  color: #AAA;
+  caret-color: #880d1e;
+  outline: none;
+}
+
+.btn-primary {
+    color: #880d1e !important;
+  }
