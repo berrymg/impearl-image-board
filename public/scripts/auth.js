@@ -62,7 +62,7 @@
           e && e.preventDefault();
           try {
             await signIn((emailEl.value || "").trim(), passEl.value || "");
-            const dest = _getParam("returnTo") || "board.html";
+            const dest = _getParam("returnTo") || ""; //used to redirect to thing that didnt exist anymore.. never forget...
             try { $("#exampleModal").modal("hide"); } catch (_) {}
             window.location.assign(dest);
           } catch (err) {
