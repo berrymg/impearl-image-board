@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/releases.css">
+    <title>releases</title>
+</head>
+
+<body>
+    <div class="topBar">
+
+        <div class="boardList">
+
+            <span>
+                [
+                <a href="/">home</a>
+                ]
+            </span>
+
+            <span>
+                [
+                <a href="releases.html">RELEASES!!!</a>
+                ]
+            </span>
+
+            <span class="sub">
+                [
+                <a href="jam.html">jam</a>
+                /
+                <a href="rec.html">rec</a>
+                /
+                <a href="disc.html">disc</a>
+                ]
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <header class="myHeader">
+            <img class="left-dragon" src="imgs/dragon.gif">
+            <h1>releases</h1>
+            <img src="imgs/dragon.gif">
+        </header>
+
+        <div class="myHeader" style="padding-bottom: 4px;">
+            <span> real ep coming soon....</span>
+        </div>
+
+        <hr>
+
+        <div id="myVisualizer"></div>
+
+        <div id="display" style="text-align: center;">
+        </div>
+
+        <div style="text-align: center;">warning: profanity, release organization is merely demonstrative, not real EPs</div>
+        <div id="jukebox">
+            <div class="release">
+                release - irepose >>>
+                <br>
+                <label>Esoteric Swag</label>
+                <br>
+                <audio id="audio" controls preload="none">
+                    <source src="sounds/EsotericSwag.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+                <label>neko</label>
+                <br>
+                <audio id="audio" controls preload="none">
+                    <source src="sounds/neko.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+            </div>
+
+            <div class="release">
+                release #2 - irepose >>
+                <br>
+                <label>i repress</label>
+                <br>
+                <audio id="audio" controls preload="none">
+                    <source src="sounds/i repress.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+                <label>necromancer</label>
+                <br>
+                <audio id="audio" controls preload="none">
+                    <source src="sounds/necromancer.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>
+        $("body").bootstrapMaterialDesign();
+    </script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://unpkg.com/audiomotion-analyzer/dist"></script>
+    <script>
+        // const container = document.getElementById("myVisualizer");
+        // const audioEl = document.getElementById("audio");
+        // am = new AudioMotionAnalyzer(container, {
+        //     source: audioEl,
+        //     connectSpeakers: true, // explicit; defaults to connected
+        //     height: 240
+        // });
+
+
+        const audioElements = document.querySelectorAll('audio');
+        const audioMotion = new AudioMotionAnalyzer( document.getElementById("myVisualizer"), {
+            height: 400,
+            width: 800,
+        });
+        audioElements.forEach((audioElement) => {
+            audioMotion.connectInput(audioElement);
+        });
+    </script>
+</body>
+
+</html>

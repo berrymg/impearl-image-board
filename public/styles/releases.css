@@ -1,0 +1,16 @@
+.page-container {
+    text-align: center;
+}
+
+#jukebox {
+    max-width: 400px;
+    border: 1px dotted #880d1e;
+
+    margin: 4px auto;
+}
+
+.release {
+    border-top: 1px solid #880d1e;
+    border-bottom: 1px solid #880d1e;
+    margin: 4px;
+}
